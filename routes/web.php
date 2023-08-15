@@ -41,6 +41,9 @@ Route::middleware('auth')->group(function () {
     // Create Page
     Route::get('/reviews/create', [\App\Http\Controllers\ReviewController::class, 'create'])->name('reviews.create');
 
+    // Create Endpoint
+    Route::post('/reviews/store', [\App\Http\Controllers\ReviewController::class, 'store'])->name('reviews.store');
+
     // Edit Page
     Route::get('/reviews/{review}/edit', [\App\Http\Controllers\ReviewController::class, 'edit'])->name('reviews.edit');
 
@@ -49,9 +52,6 @@ Route::middleware('auth')->group(function () {
 
     // Delete Endpoint
     Route::delete('/reviews/{review}/delete', [\App\Http\Controllers\ReviewController::class, 'delete'])->name('reviews.delete');
-
-    // Create Endpoint
-    Route::post('/reviews/store', [\App\Http\Controllers\ReviewController::class, 'store'])->name('reviews.store');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
