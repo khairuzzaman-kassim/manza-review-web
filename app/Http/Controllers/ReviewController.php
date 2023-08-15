@@ -40,7 +40,7 @@ class ReviewController extends Controller
             dd($e);
             return redirect()->route('error');
         }
-        return redirect()->back();
+        return redirect()->route('reviews.index');
     }
 
     public function edit(Review $review){
