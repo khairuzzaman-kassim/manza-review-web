@@ -30,16 +30,16 @@
                 errors.author
             }}</small>
 
-            <InputLabel for="rating" value="Rating" class="mt-4" />
-            <TextInput id="rating" v-model="form.rating" type="text" />
-            <small v-if="errors.rating" class="text-red-700">{{
-                errors.rating
-            }}</small>
-
             <InputLabel for="category" value="Category" class="mt-4" />
             <TextInput id="category" v-model="form.category" type="text" />
             <small v-if="errors.category" class="text-red-700">{{
                 errors.category
+            }}</small>
+
+            <InputLabel for="rating" value="Rating" class="mt-4" />
+            <TextInput id="rating" v-model="form.rating" type="text" />
+            <small v-if="errors.rating" class="text-red-700">{{
+                errors.rating
             }}</small>
 
             <InputLabel for="description" value="Description" class="mt-4" />
