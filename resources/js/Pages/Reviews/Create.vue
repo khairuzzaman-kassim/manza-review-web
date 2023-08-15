@@ -36,6 +36,12 @@
                 errors.category
             }}</small>
 
+            <InputLabel for="rating" value="Rating" class="mt-4" />
+            <TextInput id="rating" v-model="form.rating" type="text" />
+            <small v-if="errors.rating" class="text-red-700">{{
+                errors.rating
+            }}</small>
+
             <InputLabel for="description" value="Description" class="mt-4" />
             <textarea
                 id="description"
@@ -113,6 +119,7 @@ const form = useForm({
     author: user.name,
     author_id: user.id,
     category: "",
+    rating: "",
     description: "",
 });
 </script>

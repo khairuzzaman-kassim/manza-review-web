@@ -21,23 +21,20 @@ class ReviewController extends Controller
     }
 
     public function store(Request $request){
-        // dd($request);
         $validated_data = $request->validate([
             'title' => 'required|max:100|min:5',
             'author_id' => 'required|min:1',
             'category' => 'required|max:100|min:5',
             'description' => 'required',
-            // 'rating' => 'required|gte:0|lte:10',
+            'rating' => 'required|gte:0|lte:10',
         ]);
-        // dd($validated_data);
-
         try {
             $review = new Review;
             $review->title = $validated_data['title'];
             $review->author_id = $validated_data['author_id'];
             $review->category = $validated_data['category'];
             $review->description = $validated_data['description'];
-            // $review->rating = $validated_data['rating'];
+            $review->rating = $validated_data['rating'];
             $review->save();
         } catch (\Exception $e) {
             dd($e);
