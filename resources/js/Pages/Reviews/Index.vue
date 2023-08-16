@@ -1,5 +1,5 @@
 <template>
-    <Head title="Dashboard" />
+    <Head title="Reviews" />
 
     <AuthenticatedLayout>
         <template #header>
@@ -126,10 +126,9 @@
 
                         <ConfirmationModal :show="showReviewDelete" @close="hideReviewDelete">
                             <template v-slot:title>
-                                Delete {{ reviewToDelete.title }}
+                                Are you sure you want to delete "{{ reviewToDelete.title }}"?
                             </template>
                             <template v-slot:content>
-                                Are you sure you want to delete this review?<br/>
                                 Deleted data will be lost forever!
                             </template>
                             <template v-slot:footer>
@@ -186,7 +185,6 @@
                 </div>
             </div>
         </div>
-
         
     </AuthenticatedLayout>
 </template>
