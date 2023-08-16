@@ -1,16 +1,4 @@
-<script setup>
-defineProps({
-    logoClass: {
-        type: String,
-        required: true,
-    },
-});
-</script>
-
-<template>
-    <div class="columns-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.035 50.035" class="fill-current text-red-900 text-center" :class="logoClass">
-            <path d="M47.516,7.273c-0.162-0.21-0.707-0.776-0.746-0.814c-0.358-0.331-0.752-0.612-1.167-0.852l1.118-2.981
+import{o as c,e as t,n as s,a as e}from"./app-da4eaf27.js";const l={class:"columns-1"},o=e("path",{d:`M47.516,7.273c-0.162-0.21-0.707-0.776-0.746-0.814c-0.358-0.331-0.752-0.612-1.167-0.852l1.118-2.981
                 c0.21-0.56,0.136-1.16-0.202-1.647c-0.5-0.721-1.492-0.981-2.28-0.587l-1.843,0.922l-4.357-1.245
                 c-0.833-0.235-1.717,0.159-2.101,0.928c-0.304,0.609-0.238,1.328,0.173,1.874l2.368,3.158c-0.247,0.185-0.487,0.383-0.71,0.605
                 c-1.362,1.362-2.046,3.246-1.881,5.076c-0.027,4.979-0.932,10.464-7.312,16.845c-6.352,6.351-11.96,7.278-16.614,7.332
@@ -26,9 +14,4 @@ defineProps({
                 c-0.016-0.552,0.419-1.012,0.972-1.028c1.286-0.036,2.606-0.233,3.923-0.584c0.529-0.143,1.081,0.174,1.224,0.708
                 C21.209,40.283,20.892,40.831,20.358,40.973z M23.94,39.7c-0.132,0.059-0.27,0.086-0.404,0.086c-0.384,0-0.75-0.222-0.915-0.595
                 c-0.224-0.505,0.004-1.096,0.509-1.319c8.983-3.98,15.645-12.437,16.577-21.043c0.06-0.55,0.556-0.947,1.102-0.887
-                c0.55,0.06,0.946,0.553,0.887,1.102C40.672,26.481,33.703,35.373,23.94,39.7z"
-            />
-        </svg>
-        <h2 class="py-3 text-center text-xl font-semibold text-gray-900 dark:text-white">MANZA FOOD REVIEW</h2>
-    </div>
-</template>
+                c0.55,0.06,0.946,0.553,0.887,1.102C40.672,26.481,33.703,35.373,23.94,39.7z`},null,-1),a=[o],r=e("h2",{class:"py-3 text-center text-xl font-semibold text-gray-900 dark:text-white"},"MANZA FOOD REVIEW",-1),d={__name:"ApplicationLogo",props:{logoClass:{type:String,required:!0}},setup(n){return(i,_)=>(c(),t("div",l,[(c(),t("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 50.035 50.035",class:s(["fill-current text-red-900 text-center",n.logoClass])},a,2)),r]))}};export{d as _};
